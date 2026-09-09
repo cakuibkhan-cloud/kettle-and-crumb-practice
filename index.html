@@ -2,12 +2,13 @@
 <html lang="en">
 <head>
   <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-PM9BRNDX');</script>
-<!-- End Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-PM9BRNDX');</script>
+  <!-- End Google Tag Manager -->
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kettle & Crumb — GTM Practice Site</title>
@@ -140,9 +141,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PM9BRNDX"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PM9BRNDX"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
 
   <nav>
     <div class="logo">Kettle & Crumb</div>
@@ -282,69 +283,5 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       document.getElementById('contact-form').reset();
     }
   </script>
-</body>
-</html>
-      <label for="contact-name">Name</label>
-      <input type="text" id="contact-name" required />
-      <label for="contact-email">Email</label>
-      <input type="email" id="contact-email" required />
-      <label for="contact-message">Message</label>
-      <textarea id="contact-message" required></textarea>
-      <button class="btn btn-primary" type="submit">Send Message</button>
-      <div class="contact-msg" id="contact-msg">Message received (practice only).</div>
-    </form>
-  </div>
-</section>
-
-<footer>
-  <div class="wrap footer-inner">
-    <div>© 2026 Kettle & Crumb — GTM practice site</div>
-    <div class="social-links">
-      <a href="https://instagram.com" id="social-instagram" target="_blank" rel="noopener">Instagram</a>
-      <a href="https://facebook.com" id="social-facebook" target="_blank" rel="noopener">Facebook</a>
-    </div>
-  </div>
-</footer>
-
-<script>
-  // Simple dataLayer pushes — inspect these in GTM Preview mode
-  window.dataLayer = window.dataLayer || [];
-
-  function handleOrder(){
-    dataLayer.push({ event: 'cta_click', cta_id: 'order_now' });
-    alert('This is a practice button — in a real site this would go to checkout.');
-  }
-
-  function addToCart(btn){
-    var item = btn.getAttribute('data-item');
-    var price = btn.getAttribute('data-price');
-    dataLayer.push({
-      event: 'add_to_cart',
-      item_name: item,
-      item_price: price
-    });
-    btn.textContent = 'Added ✓';
-    btn.classList.add('added');
-    setTimeout(function(){
-      btn.textContent = 'Add to cart';
-      btn.classList.remove('added');
-    }, 1500);
-  }
-
-  function handleNewsletter(e){
-    e.preventDefault();
-    dataLayer.push({ event: 'newsletter_signup' });
-    document.getElementById('newsletter-msg').style.display = 'block';
-    document.getElementById('newsletter-form').reset();
-  }
-
-  function handleContact(e){
-    e.preventDefault();
-    dataLayer.push({ event: 'contact_form_submit' });
-    document.getElementById('contact-msg').style.display = 'block';
-    document.getElementById('contact-form').reset();
-  }
-</script>
-
 </body>
 </html>
