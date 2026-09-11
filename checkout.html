@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PM9BRNDX');</script>
+<!-- End Google Tag Manager -->
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checkout — Kettle & Crumb</title>
+
+  <style>
+    :root{
+      --bg: #F2F0EA;
+      --panel: #FFFFFF;
+      --ink: #22201D;
+      --ink-soft: #5A564F;
+      --plum: #4A2545;
+      --plum-deep: #33192E;
+      --gold: #E0A83E;
+      --gold-deep: #C08F2E;
+      --line: #DDD8CC;
+    }
+    *{box-sizing:border-box;}
+    body{
+      margin:0;
+      background:var(--bg);
+      color:var(--ink);
+      font-family:'Work Sans', -apple-system, sans-serif;
+      line-height:1.55;
+    }
+    h1,h2,h3{
+      font-family:'Fraunces', Georgia, serif;
+      font-weight:600;
+      margin:0 0 0.4em 0;
+      color:var(--plum-deep);
+    }
+    a{color:var(--plum);}
+    .wrap{max-width:1080px;margin:0 auto;padding:0 24px;}
+    nav{
+      display:flex;justify-content:space-between;align-items:center;
+      padding:20px 24px;border-bottom:1px solid var(--line);
+      background:var(--panel);
+    }
+    .logo{font-family:'Fraunces',serif;font-weight:600;font-size:1.3rem;color:var(--plum-deep);}
+    .navlinks a{
+      margin-left:24px;text-decoration:none;color:var(--ink);font-size:0.95rem;
+    }
+    .navlinks a:hover{color:var(--plum);}
+    .btn{
+      display:inline-block;padding:13px 26px;border-radius:2px;
+      text-decoration:none;font-size:0.95rem;cursor:pointer;border:none;
+      font-family:'Work Sans',sans-serif;
+    }
+    .btn-primary{background:var(--plum);color:#fff;}
+    .btn-primary:hover{background:var(--plum-deep);}
+    .btn-outline{background:transparent;color:var(--plum);border:1.5px solid var(--plum);}
+    .btn-outline:hover{background:var(--plum);color:#fff;}
+    .checkout-panel{
+      max-width:560px;margin:64px auto;padding:40px;background:var(--panel);
+      border:1px solid var(--line);border-radius:4px;
+    }
+    .checkout-panel p{color:var(--ink-soft);}
+    .order-summary{
+      margin:24px 0;padding:18px;background:var(--bg);border-radius:4px;
+      font-size:0.95rem;color:var(--ink-soft);
+    }
+    .order-summary strong{color:var(--ink);}
+    footer{
+      background:var(--plum-deep);color:#D8CFD6;padding:40px 24px;margin-top:60px;
+    }
+    .footer-inner{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:20px;}
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PM9BRNDX"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <nav>
+    <div class="logo">Kettle & Crumb</div>
+    <div class="navlinks">
+      <a href="index.html">Home</a>
+      <a href="index.html#menu">Menu</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+  </nav>
+
+  <div class="wrap">
+    <div class="checkout-panel">
+      <h1>Checkout</h1>
+      <p>This is a placeholder checkout page — practicing what happens after the "Order Now" click, and confirming GTM fires a pageview here too.</p>
+      <div class="order-summary">
+        <strong>Practice order</strong><br />
+        No real items, prices, or payment details are collected on this page.
+      </div>
+      <a class="btn btn-outline" href="index.html">← Back to home</a>
+    </div>
+  </div>
+
+  <footer>
+    <div class="wrap footer-inner">
+      <div>© 2026 Kettle & Crumb — GTM practice site</div>
+    </div>
+  </footer>
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    dataLayer.push({ event: 'checkout_view' });
+  </script>
+</body>
+</html>
